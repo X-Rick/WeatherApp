@@ -1,17 +1,17 @@
-import Link from 'next/link';
+
+import Logo from './Logo';
+
 
 export default function Header() {
   return (
     <header className="bg-background text-foreground p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">
-          <Link href="/">WeatherApp</Link>
-        </div>
+        <Logo />
         <nav className="flex space-x-4">
-          <Link href="/">Inicio</Link>
-          <Link href="/ciudades">Ciudades</Link>
-          <Link href="/paises">Países</Link>
-          <Link href="/acerca">Acerca de</Link>
+          <span> Inicio </span>
+          <span>ciudades</span>
+          <span> Países </span>
+          <span>Acerca de </span>
         </nav>
         <div className="flex items-center space-x-4">
           <input
